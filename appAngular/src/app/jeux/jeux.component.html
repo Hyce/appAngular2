@@ -1,0 +1,21 @@
+
+
+
+<table>
+  <thead>
+<tr class="row titres">
+  <th class="col-md-2">Name</th>
+  <th class="col-md-2">Cover</th>
+  <th class="col-md-6">Summary</th>
+  <th class="col-md-1">Genres</th>
+</tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let jeu of jeux" class="row">
+      <td class="col-md-2 choco">{{jeu['name']}}</td>
+      <td class="col-md-2"><img src="{{jeu['cover']['url']}}"  class="img-responsive" alt=""></td>
+      <td class="col-md-6">{{jeu['summary']}}</td>
+      <td class="col-md-1 choco">{{jeu['genres']}}</td>
+    </tr>
+  </tbody>
+</table>
